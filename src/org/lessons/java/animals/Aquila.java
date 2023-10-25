@@ -1,7 +1,7 @@
 package org.lessons.java.animals;
 
 // Classe derivata
-public class Aquila extends Animale{
+public class Aquila extends Animale implements IVolante{
 
     @Override
     public void verso() {
@@ -10,6 +10,10 @@ public class Aquila extends Animale{
     @Override
     public void mangia() {
         System.out.println("Piccoli mammiferi e pesci");
+    }
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!");
     }
 
     // Metodi normali
