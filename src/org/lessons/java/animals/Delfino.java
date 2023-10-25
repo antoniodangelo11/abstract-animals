@@ -13,7 +13,7 @@ public class Delfino extends Animale implements INuotante{
     }
     @Override
     public void nuota() {
-        System.out.println("Sto nuotando!");
+        System.out.println("Nuotando!");
     }
 
     // Metodi normali

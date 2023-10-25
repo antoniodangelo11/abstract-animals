@@ -16,21 +16,23 @@ public class Main {
             animale.mangia();
             System.out.println();
 
-            // Verifica se l'animale vola o nuota
+            // Verifico se l'animale vola o nuota
             if (animale instanceof IVolante) {
-                System.out.print("volo o nuoto: ");
+                System.out.print("volo o nuoto, ma io sto: ");
                 faiVolare((IVolante) animale);
                 System.out.println();
             }
 
             if (animale instanceof INuotante) {
-                System.out.print("volo o nuoto: ");
+                System.out.print("volo o nuoto, ma io sto: ");
                 faiNuotare((INuotante) animale);
                 System.out.println();
             }
         }
     }
 
+
+    // Metodi statici
     public static void faiVolare(IVolante animale){
         animale.vola();
     }
